@@ -4,22 +4,22 @@
             <div class="mail_section">
                 <div class="row">
                     <div class="col-sm-6 col-lg-2">
-                        <div><a href="#"><img src="<c:url value='template/images/footer-logo.png'/>"></a></div>
+                        <div><a href="#"><img src="<c:url value='/template/images/footer-logo.png'/>"></a></div>
                     </div>
                     <div class="col-sm-6 col-lg-2">
-                        <div class="footer-logo"><img src="<c:url value='template/images/phone-icon.png'/>"><span class="map_text">(+84) 1234567890</span>
+                        <div class="footer-logo"><img src="<c:url value='/template/images/phone-icon.png'/>"><span class="map_text">(+84) 1234567890</span>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <div class="footer-logo"><img src="<c:url value='template/images/email-icon.png'/>"><span
+                        <div class="footer-logo"><img src="<c:url value='/template/images/email-icon.png'/>"><span
                                 class="map_text">19110@student.hcmute.edu.vn</span></div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <ul>
-                            <li><a href="#"><img class="imagehover" src="<c:url value='template/images/fb-icon.png'/>"></a></li>
-                            <li><a href="#"><img class="imagehover" src="<c:url value='template/images/twitter-icon.png'/>"></a></li>
-                            <li><a href="#"><img class="imagehover" src="<c:url value='template/images/in-icon.png'/>"></a></li>
-                            <li><a href="#"><img class="imagehover" src="<c:url value='template/images/google-icon.png'/>"></a></li>
+                            <li><a href="#"><img class="imagehover" src="<c:url value='/template/images/fb-icon.png'/>"></a></li>
+                            <li><a href="#"><img class="imagehover" src="<c:url value='/template/images/twitter-icon.png'/>"></a></li>
+                            <li><a href="#"><img class="imagehover" src="<c:url value='/template/images/in-icon.png'/>"></a></li>
+                            <li><a href="#"><img class="imagehover" src="<c:url value='/template/images/google-icon.png'/>"></a></li>
                         </ul>
                     </div>
                     <div class="col-sm-2"></div>

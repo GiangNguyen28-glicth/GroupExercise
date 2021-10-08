@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://JAVA.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
   <display-name>HostGroup</display-name>
-
+<!--  Bai tap chuong 2-->
   <servlet>
     <servlet-name>login</servlet-name>
     <servlet-class>com.group.Exercise.Week1.controller.LoginController</servlet-class>
@@ -23,6 +23,27 @@
   <servlet-mapping>
     <servlet-name>login2</servlet-name>
     <url-pattern>/exercise-userlogin2</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>login3</servlet-name>
+    <jsp-file>/views/ExerciseWeek1/loginJSP.jsp</jsp-file>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>login3</servlet-name>
+    <url-pattern>/exercise-userlogin3</url-pattern>
+  </servlet-mapping>
+
+  <!--  Bai tap chuong 5-->
+  <servlet>
+    <servlet-name>emailList</servlet-name>
+    <servlet-class>com.group.Exercise.Week2.controller.EmaiListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>emailList</servlet-name>
+    <url-pattern>/exercise-emailList</url-pattern>
   </servlet-mapping>
 
   <filter>

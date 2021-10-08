@@ -14,7 +14,9 @@ import java.io.IOException;
 public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher requestDispatcher=req.getRequestDispatcher("/WEB-INF/views/ExerciseWeek1/login.jsp");
+        RequestDispatcher requestDispatcher=req.getRequestDispatcher("/views/ExerciseWeek1/login.jsp");
+        String week="week1";
+        req.setAttribute("week",week);
         requestDispatcher.forward(req,resp);
     }
 
@@ -26,13 +28,13 @@ public class LoginController extends HttpServlet {
         Message messageResponse = new Message("A");
 
         Account account = new Account();
-        if(user.getUsername().equals(account.getUSER_NAME()) && user.getUsername().equals(account.getPASS_WORD())){
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/views/ExerciseWeek1/home.jsp");
+        if(user.getUsername().equals(account.getUSER_NAME()) && user.getPassword().equals(account.getPASS_WORD())){
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/ExerciseWeek1/home.jsp");
             requestDispatcher.forward(req,resp);
         }else{
             messageResponse.setMessage("Tài khoản hoặc mật khẩu không chính xác");
             req.setAttribute("messageResponse",messageResponse);
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/views/ExerciseWeek1/login.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/ExerciseWeek1/login.jsp");
             requestDispatcher.forward(req,resp);
         }
     }
